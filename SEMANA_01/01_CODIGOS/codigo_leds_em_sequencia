@@ -1,0 +1,26 @@
+const int ledPinBlue = 25; // Pino 25 do ESP32 conectado ao LED
+const int ledPinRed = 26;
+const int ledPinGreen = 27;
+
+void setup() {
+  pinMode(ledPinBlue, OUTPUT); // Configura o pino como saída
+  pinMode(ledPinRed, OUTPUT);
+  pinMode(ledPinGreen, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPinBlue, HIGH); // Liga o LED
+  delay(100); // Aguarda 1 segundo
+  digitalWrite(ledPinBlue, LOW); // Desliga o LED
+  delay(100); // Aguarda 1 segundo
+
+  digitalWrite(ledPinRed, HIGH); // Liga o LED
+  delay(100); // Aguarda 1 segundo
+  digitalWrite(ledPinRed, LOW); // Desliga o LED
+  delay(100); // Aguarda 1 segundo
+
+  digitalWrite(ledPinGreen, HIGH); // Liga o LED
+  delay(100); // Aguarda 1 segundo
+  digitalWrite(ledPinGreen, LOW); // Desliga o LED
+  delay(100); // Aguarda 1 segundo
+}
